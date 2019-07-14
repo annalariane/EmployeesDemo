@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESSILOR EMPLOYEE</title>
+    <img src="essilor-logo.png" alt="Essilor Logo" style="width:80px;height:80px">
+    <link href="style.css" rel="stylesheet" />
+</head>
+<hr>
+<br />
+
+<!-- Call initial function upon reload-->
+
+<body onload="init()">
+    <div id="root"></div>
+    <script src="script.js?n=1"></script>
+    <br />
+    <div>
+        <table style="width:50%" align="center">
+            <tr class="header--left_align">
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Age</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><input type="text" id="Name" name="Name" /></td>
+                <td><input type="number" id="Salary" name="Salary" maxlength="7" /></td>
+                <td><input type="number" id="Age" name="Age" maxlength="3" /></td>
+                <td><input type="button" onclick="insert_Row()" value="Send"></td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <div>
+        <table id="empTable">
+            <thead>
+                <title>ESSILOR LIST OF EMPLOYEES</title>
+            </thead>
+            <tbody>
+                <tr class="header--left_align">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>Age</th>
+                    <th>Action</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
